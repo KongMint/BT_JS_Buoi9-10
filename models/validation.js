@@ -73,17 +73,6 @@ function Validation() {
     return false;
   };
 
-  //   this.kiemTraNgay = function (value, errorId, mess) {
-  //     var letter = /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
-  //     if (value.match(letter)) {
-  //       getEle(errorId).style.display = "none";
-  //       getEle(errorId).innerHTML = "";
-  //       return true;
-  //     }
-  //     getEle(errorId).style.display = "block";
-  //     getEle(errorId).innerHTML = mess;
-  //     return false;
-  //   };
 
   this.kiemTraSoLuong = function (value, errorId, mess, min, max) {
     if (value >= min && value <= max) {
